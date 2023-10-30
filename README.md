@@ -9,5 +9,5 @@ $ cd CRLF-Injection
 
 # Usage 
 ```
-$ python3 test/crlf.py -file urls.txt
+$ python3 crlf.py -file urls.txt
 ```
