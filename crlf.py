@@ -1,10 +1,15 @@
-import argparse
-import concurrent.futures
-import os
-import random
-import requests
-import sys
-import time
+
+try:
+    import argparse
+    import concurrent.futures
+    import os
+    import random
+    import requests
+    import sys
+    import time
+except ImportError:
+    os.system("pip3 install requests")
+
 
 payloads = [
     "0%%0a0aSet-Cookie:crlf=injection",
