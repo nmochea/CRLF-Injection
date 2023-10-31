@@ -1,14 +1,10 @@
-try:
-    import argparse
-    import concurrent.futures
-    import os
-    import random
-    import requests
-    import sys
-    import time
-except ImportError:
-    os.system("pip3 install requests")
-
+import argparse
+import concurrent.futures
+import os
+import random
+import requests
+import sys
+import time
 
 payloads = [
     "0%%0a0aSet-Cookie:crlf=injection",
@@ -45,7 +41,6 @@ def main():
         parser.error("Please specify a file containing URLs to scan with the -file option")
 
     try:
-        os.system("clear")
         print("   __   __        ___ ")
         print("  /  ` |__) |    |__  ")
         print("  \__, |  \ |___ |    ")
